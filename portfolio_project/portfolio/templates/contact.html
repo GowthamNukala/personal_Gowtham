@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Gowtham's Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Gowtham's Portfolio</div>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'skillset' %}">Services</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'contact' %}">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <h1>Contact Me</h1>
+        <p>
+          I’d love to collaborate or bring your ideas to life! Feel free to reach out through:
+        </p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:gowthamnaidunukala@gmail.com">gowthamnaidunukala@gmail.com</a></li>
+          <li><strong>Phone:</strong> +91 79933 68519</li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/GowthamNukala" target="_blank">github.com/GowthamNukala</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gowtham-nukala-85a6941a8" target="_blank">linkedin.com/in/gowtham-nukala</a></li>
+        </ul>
+      </div>
+      <div class="rightSection">
+        <img src="{% static 'images/img4.png' %}" alt="Contact">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div>Gowtham's Developer Portfolio</div>
+    </div>
+    <div>&copy; 2024 Gowtham'sPortfolio.com | All rights reserved</div>
+  </footer>
+</body>
+</html>

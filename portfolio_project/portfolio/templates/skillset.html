@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skillset - Gowtham's Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Gowtham's Portfolio</div>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'skillset' %}">Skillset</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'contact' %}">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <h1>My Skillset</h1>
+        <ul>
+          <li><strong>Programming Languages:</strong> Python, JavaScript, HTML, CSS</li>
+          <li><strong>Frameworks:</strong> Django, Bootstrap</li>
+          <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+          <li><strong>Version Control:</strong> Git, GitHub</li>
+          <li><strong>Tools:</strong> VS Code, pycharm</li>
+        </ul>
+      </div>
+      <div class="rightSection">
+        <img src="{% static 'images/img4.png' %}" alt="Skillset Illustration">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Gowtham's Developer Portfolio</p>
+    </div>
+    <div class="footer-rights">
+      &copy; 2024 Gowtham'sPortfolio.com | All rights reserved
+    </div>
+  </footer>
+</body>
+</html>

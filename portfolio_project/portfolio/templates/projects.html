@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Gowtham's Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Gowtham's Portfolio</div>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'skillset' %}">Services</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'contact' %}">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <h1>My Projects</h1>
+        <ul>
+          <li><strong>Parkinson’s Detection:</strong> Improved detection rates with ML and genetic algorithms.</li>
+          <li><strong>Smart Attendance System:</strong> Automated face recognition for seamless attendance logging.</li>
+          <li><strong>IoT-Based Moisture Control:</strong> Smart irrigation system to reduce water wastage.</li>
+        </ul>
+      </div>
+      <div class="rightSection">
+        <img src="{% static 'images/img5.png' %}" alt="Projects">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div>Gowtham's Developer Portfolio</div>
+    </div>
+    <div>&copy; 2024 Gowtham'sPortfolio.com | All rights reserved</div>
+  </footer>
+</body>
+</html>

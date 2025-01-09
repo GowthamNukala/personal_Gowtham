@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Gowtham's Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Gowtham's Portfolio</div>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'skillset' %}">Services</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'contact' %}">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <h1>About Me</h1>
+        <p>Hello! I'm Gowtham, a passionate web developer with a strong foundation in both frontend and backend technologies. I specialize in building dynamic, user-friendly web applications using Python, Django, and modern web development tools.</p>
+<br>
+
+<p>In addition to my web development skills, I have a keen interest in Software Development, Machine Learning, and Data Science. I am excited about solving complex problems and building applications that leverage intelligent algorithms to process large datasets, predict outcomes, and improve decision-making processes.</p>
+
+<br>
+
+<p>I am always eager to explore new challenges and expand my knowledge in these rapidly growing fields. My goal is to build scalable, maintainable applications that improve user experiences, solve real-world issues, and incorporate advanced data-driven insights through machine learning models.</p>
+
+<br>
+
+<p>Feel free to explore my portfolio to learn more about my projects, skillset, and how I approach development in the world of software, data, and machine learning.</p>
+
+<br>
+<p>
+          My goal is to deliver impactful solutions that cater to real-world needs. Beyond coding,  
+          I love playing cricket, watching movies, and surfing the internet to explore emerging technologies.
+        </p>
+
+      </div>
+      <div class="rightSection">
+        <img src="{% static 'images/img3.png' %}" alt="Gowtham's Photo">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div>Gowtham's Developer Portfolio</div>
+    </div>
+    <div>&copy; 2024 Gowtham'sPortfolio.com | All rights reserved</div>
+  </footer>
+</body>
+</html>

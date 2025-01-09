@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gowtham - Developer Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Gowtham's Portfolio</div>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'skillset' %}">Services</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'contact' %}">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        <h1>Welcome!</h1>
+        <p>Hi, my name is <span class="purple">Gowtham Nukala</span>.</p>
+        <p>I am a passionate</p>
+        <span id="element"></span> <!-- Typed.js target element -->
+        <div class="buttons">
+          <a href="{% static 'files/GowthamNukala.pdf' %}" class="btn" download>Download My Resume</a>
+          <a href="https://github.com/GowthamNukala" class="btn" target="_blank">Visit GitHub</a>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="{% static 'images/img1.png' %}" alt="Gowtham's Photo">
+      </div>
+    </section>
+    <hr>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div>Gowtham's Developer Portfolio</div>
+      <div>
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'skillset' %}">Services</a></li>
+          <li><a href="{% url 'projects' %}">Projects</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>&copy; 2024 Gowtham'sPortfolio.com | All rights reserved</div>
+  </footer>
+
+  <!-- Include Typed.js for text animation -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Include custom script for animations -->
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
