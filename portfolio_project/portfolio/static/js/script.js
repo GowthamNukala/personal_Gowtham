@@ -1,7 +1,7 @@
 // Typed.js Initialization
 document.addEventListener('DOMContentLoaded', function () {
   var typed = new Typed('#element', {
-    strings: ['Web Developer', 'Software Developer', 'Tech Enthusiast'],
+    strings: ['Web Developer', 'Software Developer'],
     typeSpeed: 50,
     backSpeed: 30,
     loop: true
